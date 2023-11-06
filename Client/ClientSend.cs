@@ -1,0 +1,19 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace GameClient {
+    public class ClientSend {
+        private static void SendUDPData(Packet _packet) {
+            _packet.WriteLength();
+            Client.udp.SendData(_packet);
+        }
+
+
+        public static void UDPTestReceived() {
+            using (Packet _packet = new Packet((int)ClientPackets.udpTestReceived)) {
+                _packet.Write("Received a UDP packet.");
+                SendUDPData(_packet);
+            }
+        }
+    }
+}
