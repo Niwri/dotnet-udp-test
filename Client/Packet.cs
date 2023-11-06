@@ -3,16 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 namespace GameClient {
-/// <summary>Sent from server to client.</summary>
+    
+    // ServerPacket IDs must correspond to the ClientPacket IDs on the server side. These are used to RECEIVE
     public enum ServerPackets
     {
         udpTest = 1
     }
-
-    /// <summary>Sent from client to server.</summary>
+    // ClientPacket IDs must correspond to the ServerPacket IDs on the server side. These are used to SEND.
     public enum ClientPackets
     {
-        udpTestReceived = 1
+        udpTestReceived = 10
     }
 
     public class Packet : IDisposable

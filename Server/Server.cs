@@ -42,6 +42,7 @@ namespace GameServer {
                     
                     if(clients[_clientId].udp.endPoint == null) {
                         clients[_clientId].udp.Connect(_clientEndPoint);
+                        Console.WriteLine($"Registered Client {_clientEndPoint}");
                         return;
                     }
 
@@ -72,8 +73,9 @@ namespace GameServer {
 
             packetHandlers = new Dictionary<int, PacketHandler>() {
                 { (int)ClientPackets.udpTestReceived, ServerHandle.UDPTestReceived }
+                // Add more packet handling functionalities here!
             };
-            Console.WriteLine("Initialized packets.");
+            Console.WriteLine($"Initialized {packetHandlers.Count} packets.");
         }
 
     }   

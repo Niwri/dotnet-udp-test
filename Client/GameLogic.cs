@@ -2,14 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameServer {
+namespace GameClient {
     class GameLogic {
         public static void Update() {
             ThreadManager.UpdateMain();
-
-            /*
-                IMPLEMENT GAME FUNCTIONALITIES HERE
-            */
+            //ClientSend.UDPTestReceived();
         }
     }
 }

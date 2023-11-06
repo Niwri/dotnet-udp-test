@@ -32,5 +32,9 @@ namespace GameServer {
                 SendUDPData(_toClient, _packet);
             }
         }
+
+        /*
+            START IMPLEMENTING SERVER SEND FUNCTIONS HERE
+        */
     }
 }

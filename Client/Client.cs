@@ -10,7 +10,7 @@ namespace GameClient {
 
         public static string ip = "127.0.0.1";
         public static int port = 26950;
-        public static int myId = 0;
+        public static int myId = 10;
         public static UDP udp;
         private delegate void PacketHandler(Packet _packet);
         private static Dictionary<int, PacketHandler> packetHandlers;
@@ -29,12 +29,11 @@ namespace GameClient {
             public void Connect(int _localPort) {
                 socket = new UdpClient(_localPort);
                 socket.Connect(endPoint);
-                Console.WriteLine($"Connecting to endpoint {endPoint.ToString()} on port {_localPort}");
+                Console.WriteLine($"Connected to endpoint {endPoint.ToString()} on port {_localPort}");
                 socket.BeginReceive(ReceiveCallback, null);
 
                 using (Packet _packet = new Packet((int)ClientPackets.udpTestReceived)) {
-                    _packet.Write("WAHT");
-                    SendData(_packet);
+                    ClientSend.UDPTestReceived(); // Sending Packet first time to register ID in server.
                 }
             }
 
@@ -81,8 +80,11 @@ namespace GameClient {
         }
 
         private static void InitializeClientData() {
+
+            
             packetHandlers = new Dictionary<int, PacketHandler>() {
                 {(int)ServerPackets.udpTest, ClientHandle.UDPTest},
+                // Add more packet functions here! 
             };
 
             Console.WriteLine("Initialized packets.");

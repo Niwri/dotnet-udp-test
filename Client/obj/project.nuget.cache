@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iiYxOa5GA/EM97or7Sp+jESBqxX2TOUsIiVkURhD8fcKXFybgm8qKewzyOrYxHY+1u28ZV0DFskXS7JRazpkpw==",
+  "dgSpecHash": "glfvv/ya03jERvTfNHVuFqlEHwbuqcMOMf64trRE6SPEpIm0pFbi4zKn5owfkcATvcRNYO3m9ihMGUXB5IIbjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\irwin\\Documents\\Programming Projects\\dotnet-udp-test\\client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\irwin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\irwin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\irwin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\irwin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

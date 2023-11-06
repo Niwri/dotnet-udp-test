@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace GameClient {
@@ -8,12 +9,15 @@ namespace GameClient {
             Client.udp.SendData(_packet);
         }
 
-
         public static void UDPTestReceived() {
             using (Packet _packet = new Packet((int)ClientPackets.udpTestReceived)) {
                 _packet.Write("Received a UDP packet.");
                 SendUDPData(_packet);
             }
         }
+
+        /*
+            START IMPLEMENTING CLIENT SEND FUNCTIONS HERE
+        */
     }
 }
