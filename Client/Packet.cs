@@ -12,7 +12,7 @@ namespace GameClient {
     /// <summary>Sent from client to server.</summary>
     public enum ClientPackets
     {
-        udpTestReceived
+        udpTestReceived = 1
     }
 
     public class Packet : IDisposable

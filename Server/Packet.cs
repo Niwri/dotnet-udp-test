@@ -8,7 +8,7 @@ namespace GameServer {
     }
 
     public enum ClientPackets {
-        udpTestReceived
+        udpTestReceived = 1
     }
 
     public class Packet : IDisposable

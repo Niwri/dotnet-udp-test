@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aOkZ1kR9Lzq0RK6sAEmCLuKNFeNEcup8TY2n4777l5LMhY5TXEFO2o8i6hpsUWYCs4Rm7BlXj/48vpH/mFM5Nw==",
+  "dgSpecHash": "iiYxOa5GA/EM97or7Sp+jESBqxX2TOUsIiVkURhD8fcKXFybgm8qKewzyOrYxHY+1u28ZV0DFskXS7JRazpkpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

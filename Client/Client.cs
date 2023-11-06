@@ -29,9 +29,11 @@ namespace GameClient {
             public void Connect(int _localPort) {
                 socket = new UdpClient(_localPort);
                 socket.Connect(endPoint);
+                Console.WriteLine($"Connecting to endpoint {endPoint.ToString()} on port {_localPort}");
                 socket.BeginReceive(ReceiveCallback, null);
 
-                using (Packet _packet = new Packet()) {
+                using (Packet _packet = new Packet((int)ClientPackets.udpTestReceived)) {
+                    _packet.Write("WAHT");
                     SendData(_packet);
                 }
             }

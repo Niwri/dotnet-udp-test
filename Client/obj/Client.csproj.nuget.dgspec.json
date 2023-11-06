@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\Client.csproj": {}
+    "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\Client.csproj": {
+    "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\Client.csproj",
         "packagesPath": "C:\\Users\\irwin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\Client\\obj\\",
+        "outputPath": "C:\\Users\\irwin\\Documents\\Programming Stuff\\udp-test\\client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\irwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
