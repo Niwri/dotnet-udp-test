@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System;
 
+
 namespace GameClient {
     public class ClientHandle {
         public static void UDPTest(Packet _packet) {
@@ -13,6 +14,8 @@ namespace GameClient {
         /*
             START IMPLEMENTING PACKET HANDLERS FUNCTIONS HERE
         */
+
+        
     }
     
     

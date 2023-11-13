@@ -12,7 +12,8 @@ namespace GameClient {
     // ClientPacket IDs must correspond to the ServerPacket IDs on the server side. These are used to SEND.
     public enum ClientPackets
     {
-        udpTestReceived = 10
+        udpTestReceived = 10,
+        udpMovement = 2
     }
 
     public class Packet : IDisposable

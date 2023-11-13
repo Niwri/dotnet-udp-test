@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace GameClient {
+
+    
     public class ClientSend {
         private static void SendUDPData(Packet _packet) {
             _packet.WriteLength();
@@ -19,5 +21,15 @@ namespace GameClient {
         /*
             START IMPLEMENTING CLIENT SEND FUNCTIONS HERE
         */
+
+        public static void UDPMovement(int ID) {
+            using (Packet _packet = new Packet((int)ClientPackets.udpMovement)) {
+                _packet.Write(ID);
+                SendUDPData(_packet);
+            }
+        }
+
+        
+
     }
 }
